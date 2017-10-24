@@ -1,14 +1,16 @@
-
+/**
+ * 
+ */
 public class Practice5Test {
-	
 	protected BSTree tree;
-
 
 	public Practice5Test() {
 		tree = new BSTree();
 	}
 
-
+	/**
+	 * @return
+	 */
 	public boolean insertRemoveTest() {
 		tree.insert("First");    // Insert a value into the tree
 		if (tree.find("First")) {    // If that works, insert another value into the tree
@@ -24,7 +26,9 @@ public class Practice5Test {
 		return false;
 	}
 
-
+	/**
+	 * @return
+	 */
 	public boolean insertMultipleTest() {
 		// Insert copies of data into the tree. See whether the tree can keep track of the copies.
 		tree.insert("copy");
@@ -42,7 +46,9 @@ public class Practice5Test {
 		return false;
 	}
 
-
+	/**
+	 * @return
+	 */
 	public boolean treeInOrderTest() {
 		// Checks whether the tree keeps data in the correct order
 		String [] values = {"Turing", "Knuth", "Dijstra", "Hopper", "Lee", "Codd", "Lovelace", "Thompson", "Matsumoto", "Allen", "Wilson"};
@@ -56,7 +62,9 @@ public class Practice5Test {
 		return false;
 	}
 	
-	
+	/**
+	 * @return
+	 */
 	public boolean treePreOrderTest() {
 		// Checks whether the tree keeps data in the correct order
 		if (tree.toStringPreOrder().equals("Turing Knuth Dijstra Codd Allen Hopper Lee Lovelace Thompson Matsumoto Wilson"))
@@ -66,7 +74,9 @@ public class Practice5Test {
 		return false;
 	}
 	
-	
+	/**
+	 * 
+	 */
 	public void runTests() {
 		int grade = 0;
 		
@@ -122,7 +132,9 @@ public class Practice5Test {
 		System.out.println("Starting point for this assignment: " + grade + "%.");
 	}
 
-
+	/**
+	 * @param
+	 */
 	public static void main(String[] args) {
 		Practice5Test test = new Practice5Test();
 		test.runTests();
